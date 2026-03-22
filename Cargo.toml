@@ -9,7 +9,16 @@ build = "build.rs"
 authors = ["mwlon <m.w.loncaric@gmail.com>"]
 categories = ["compression", "encoding"]
 description = "Sprintz codec bindings"
-include = ["src/**/*", "vendor/**/*", "build.rs", "Cargo.toml", "README.md", "LICENSE"]
+include = [
+    "src/**/*",
+    "vendor/sprintz/cpp/Compress/*.cpp",
+    "vendor/sprintz/cpp/Compress/*.h",
+    "vendor/sprintz/cpp/Compress/*.hpp",
+    "build.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+]
 license-file = "LICENSE"
 repository = "https://github.com/mwlon/sprintz-sys"
 
