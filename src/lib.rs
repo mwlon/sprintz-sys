@@ -11,12 +11,7 @@ extern "C" {
     ///
     /// # Returns
     /// Number of bytes written to `dest`, or negative on error.
-    pub fn sprintz_c_compress_delta_8b(
-        src: *const u8,
-        len: u32,
-        dest: *mut i8,
-        ndims: u16,
-    ) -> i64;
+    pub fn sprintz_c_compress_delta_8b(src: *const u8, len: u32, dest: *mut i8, ndims: u16) -> i64;
 
     /// Decompress delta-encoded data produced by [`sprintz_c_compress_delta_8b`].
     ///
@@ -31,12 +26,7 @@ extern "C" {
     pub fn sprintz_c_decompress_delta_8b(src: *const i8, dest: *mut u8) -> i64;
 
     /// Compress `len` u8 values using XFF (delta-of-delta) + RLE encoding.
-    pub fn sprintz_c_compress_xff_8b(
-        src: *const u8,
-        len: u32,
-        dest: *mut i8,
-        ndims: u16,
-    ) -> i64;
+    pub fn sprintz_c_compress_xff_8b(src: *const u8, len: u32, dest: *mut i8, ndims: u16) -> i64;
 
     /// Decompress XFF-encoded data produced by [`sprintz_c_compress_xff_8b`].
     pub fn sprintz_c_decompress_xff_8b(src: *const i8, dest: *mut u8) -> i64;
@@ -53,12 +43,8 @@ extern "C" {
     pub fn sprintz_c_decompress_delta_16b(src: *const i16, dest: *mut u16) -> i64;
 
     /// Compress `len` u16 values using XFF (delta-of-delta) + RLE encoding.
-    pub fn sprintz_c_compress_xff_16b(
-        src: *const u16,
-        len: u32,
-        dest: *mut i16,
-        ndims: u16,
-    ) -> i64;
+    pub fn sprintz_c_compress_xff_16b(src: *const u16, len: u32, dest: *mut i16, ndims: u16)
+        -> i64;
 
     /// Decompress XFF-encoded data produced by [`sprintz_c_compress_xff_16b`].
     pub fn sprintz_c_decompress_xff_16b(src: *const i16, dest: *mut u16) -> i64;

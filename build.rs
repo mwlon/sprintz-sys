@@ -9,7 +9,7 @@ fn main() {
 
     cc::Build::new()
         .cpp(true)
-        .flag("-march=haswell")  // enables AVX2 + BMI2 + LZCNT (all required by sprintz)
+        .flag("-march=haswell") // enables AVX2 + BMI2 + LZCNT (all required by sprintz)
         .flag("-std=c++14")
         .flag("-Wno-unused-function")
         .flag("-Wno-unused-variable")
