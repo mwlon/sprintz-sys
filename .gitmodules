@@ -1,0 +1,3 @@
+[submodule "vendor/sprintz"]
+	path = vendor/sprintz
+	url = https://github.com/dblalock/sprintz
